@@ -23,3 +23,15 @@ class ENVE_TYPE(Enum):
     COMMON = (0, '普通口令')
     TRUE_WISH = (1, '真心寄语')
     YOU_GUESS = (2, '你说我猜')
+
+
+class SEX(Enum):
+    DEFAULT = (0, '保密')
+    MALE = (1, '男')
+    FEMALE = (2, '女')
+
+
+class USER_STATUS(Enum):
+    FORBIDDEN = (0, '禁用')
+    REGULAR = (1, '正常')
+    UNVERIFIED = (2, '未验证')

@@ -52,47 +52,57 @@ class BaseView(View):
 
         return view
 
-    def ok(self, data=None, message='', extra=None):
-        return self.as_json_response(0, message=message, data=data, extra=extra)
+    def ok(self, data=None, msg='', code=None):
+        return self.as_json_response(0, msg=msg, data=data, code=code)
 
-    def error(self, error=1, message='服务器开小差了~', data=None, error_code=None):
+    def error(self, error=1, msg='服务器开小差了~', data=None, code=None):
         if error != 1:
-            message = ''
-        return self.as_json_response(error, message=message, data=data, error_code=error_code)
+            msg = ''
+        return self.as_json_response(error, msg=msg, data=data, code=code)
 
-    def as_json_response(self, error, message='', data=None, status=200, error_code=None, extra=None):
+    def as_json_response(self, error, msg='', data=None, status=200, code=None, extra=None):
         """return a http response with json content.
-            如果定义了传了message,且message不为空,
+            如果定义了传了msg,且msg不为空,
         """
         if isinstance(error, ErrorInfo) and error:
             result = {
                 'error': 1,
-                'error_code': error.code,
+                'code': code,
                 'extra': extra,
             }
 
-            result['message'] = message or error.msg
+            result['msg'] = msg or error.msg
         else:
             result = {
-                'error': error and 1 or 0,
-                'message': message,
+                'code': error and 1 or 0,
+                'msg': msg,
                 'extra': extra,
             }
 
-            if error and error_code is None:
-                result['error_code'] = ERROR.DEFAULT_ERROR_CODE
-            elif error and error_code is not None:
-                result['error_code'] = error_code
-                result['message'] = ERROR.getDesc(error_code)
+            if error and code is None:
+                result['code'] = ERROR.DEFAULT_ERROR_CODE
+            elif error and code is not None:
+                result['code'] = code
+                result['msg'] = msg
 
         if data is not None:
             result['data'] = data
 
         # 如果是没有登录状态码统一设置为403
-        if result.get('error_code') == ERROR.LOGIN_REQUIRED:
+        if result.get('code') == ERROR.LOGIN_REQUIRED:
             status = 403
 
         return json_response(result, status)
+
+    def _inner_dispatch_for_baseview(self, request, *args, **kwargs):
+        response = super(BaseView, self).dispatch(request, *args, **kwargs)
+        return response
+
+    def dispatch(self, request, *args, **kwargs):
+        version = request.GET.get('_version', '0.0.0')
+        _platform = request.GET.get('_platform', 'wx')
+        response = self._inner_dispatch_for_baseview(request, *args, **kwargs)
+        return response
 
 
 class BaseViewLoginRequired(LoginRequiredMixin, BaseView):
