@@ -207,8 +207,8 @@ class DefaultIndex(BaseView):
 
     def get_miaosha_data(self):
         return {
-            "code":1,
-            "msg":"暂无秒杀安排"
+            "code": 1,
+            "msg": "暂无秒杀安排"
         }
 
     def get_pintuan_data(self):
@@ -248,10 +248,10 @@ class DefaultIndex(BaseView):
     def get_yuyue_data(self):
         return [
             {
-                "id":"1",
-                "name":"mac pro",
-                "cover_pic":"http://123.56.8.39/addons/zjhj_mall/core/web/uploads/image/store_2/17d7e3855ef34d239eb004a848a11238bc14f27c.jpg",
-                "price":"1.00"
+                "id": "1",
+                "name": "mac pro",
+                "cover_pic": "http://123.56.8.39/addons/zjhj_mall/core/web/uploads/image/store_2/17d7e3855ef34d239eb004a848a11238bc14f27c.jpg",
+                "price": "1.00"
             }
         ]
 
@@ -359,64 +359,64 @@ class DefaultIndex(BaseView):
     def get_block_list(self):
         return [
             {
-                "id":1,
-                "name":"这是一个测试板块",
-                "data":{
-                    "pic_list":[
+                "id": 1,
+                "name": "这是一个测试板块",
+                "data": {
+                    "pic_list": [
                         {
-                            "pic_url":"http://123.56.8.39/addons/zjhj_mall/core/web/uploads/image/store_2/39d85ad4281ef99745541a01f7b3d306730e6855.jpg",
-                            "url":"/pages/index/index",
-                            "open_type":"navigate"
+                            "pic_url": "http://123.56.8.39/addons/zjhj_mall/core/web/uploads/image/store_2/39d85ad4281ef99745541a01f7b3d306730e6855.jpg",
+                            "url": "/pages/index/index",
+                            "open_type": "navigate"
                         }
                     ]
                 },
-                "style":0
+                "style": 0
             },
             {
-                "id":2,
-                "name":"板块测试2",
-                "data":{
-                    "pic_list":[
+                "id": 2,
+                "name": "板块测试2",
+                "data": {
+                    "pic_list": [
                         {
-                            "pic_url":"http://123.56.8.39/addons/zjhj_mall/core/web/uploads/image/store_2/85828b91ceed14c1b44947d6350ed1b11749c0d5.jpg",
-                            "url":"/pages/pt/order/order",
-                            "open_type":"navigate"
+                            "pic_url": "http://123.56.8.39/addons/zjhj_mall/core/web/uploads/image/store_2/85828b91ceed14c1b44947d6350ed1b11749c0d5.jpg",
+                            "url": "/pages/pt/order/order",
+                            "open_type": "navigate"
                         }
                     ]
                 },
-                "style":0
+                "style": 0
             }
         ]
 
     def get_update_list(self):
         return {
-            "topic":{
-                "logo_2":"http://123.56.8.39/addons/zjhj_mall/core/web/statics/images/home-page/icon-topic.png",
-                "logo_1":"http://123.56.8.39/addons/zjhj_mall/core/web/statics/images/home-page/icon-topic-1.png",
-                "heated":"http://123.56.8.39/addons/zjhj_mall/core/web/statics/images/home-page/icon-topic-r.png",
-                "count":1,
-                "topic_list":[
+            "topic": {
+                "logo_2": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/images/home-page/icon-topic.png",
+                "logo_1": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/images/home-page/icon-topic-1.png",
+                "heated": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/images/home-page/icon-topic-r.png",
+                "count": 1,
+                "topic_list": [
 
                 ]
             },
-            "notice":{
-                "name":"公告",
-                "bg_color":"#f67f79",
-                "color":"#ffffff",
-                "icon":"http://123.56.8.39/addons/zjhj_mall/core/web/statics/images/home-page/icon-notice.png",
-                "content":""
+            "notice": {
+                "name": "公告",
+                "bg_color": "#f67f79",
+                "color": "#ffffff",
+                "icon": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/images/home-page/icon-notice.png",
+                "content": ""
             },
-            "video":[
+            "video": [
                 {
-                    "name":0,
-                    "url":"",
-                    "pic_url":""
+                    "name": 0,
+                    "url": "",
+                    "pic_url": ""
                 }
             ],
-            "coupon":{
-                "bg":"http://123.56.8.39/addons/zjhj_mall/core/web/statics/images/home-page/icon-coupon-index.png",
-                "bg_1":"http://123.56.8.39/addons/zjhj_mall/core/web/statics/images/home-page/icon-coupon-no.png",
-                "coupon_list":[
+            "coupon": {
+                "bg": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/images/home-page/icon-coupon-index.png",
+                "bg_1": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/images/home-page/icon-coupon-no.png",
+                "coupon_list": [
 
                 ]
             }
@@ -698,740 +698,682 @@ class DefaultStore(BaseView):
     def search(self, baseUrl=None):
         wxappUrl = os.path.join(baseUrl, 'static/wxapp/images')
         images = {
-            'integralMall': {
+            "integralMall": {
                 "register": {
                     "register_bg": {
-                        'url': os.path.join(wxappUrl, 'register.png')
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/register.png"
                     }
                 }
             },
-            'pond': {
-                'pond': {
-                    'pond_head': {
-                        'url': os.path.join(wxappUrl, 'pond-head.png')
+            "pond": {
+                "pond": {
+                    "pond_head": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/pond-head.png"
                     },
-                    'pond_success': {
-                        'url': os.path.join(wxappUrl, 'pond-success.png')
+                    "pond_success": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/pond-success.png"
                     },
-                    'pond_empty': {
-                        'url': os.path.join(wxappUrl, 'pond-empty.png')
+                    "pond_empty": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/pond-empty.png"
                     }
                 }
             },
-            'bargain': {
-                'bargain_goods': {
-                    'time_bg': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-time.png')
+            "bargain": {
+                "bargain_goods": {
+                    "time_bg": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-time.png"
                     },
-                    'flow': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-flow.png')
+                    "flow": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-flow.png"
                     },
-                    'click': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-click.png')
+                    "click": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-click.png"
                     },
-                    'help': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-help.png')
+                    "help": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-help.png"
                     },
-                    'price': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-price.png')
+                    "price": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-price.png"
                     },
-                    'buy': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-buy.png')
+                    "buy": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-buy.png"
                     },
-                    'jiantou': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-jiantou.png')
+                    "jiantou": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-jiantou.png"
                     },
-                    'shuoming': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-shuoming.png')
+                    "shuoming": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-shuoming.png"
                     },
-                    'goods': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-goods.png')
-                    },
+                    "goods": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-goods.png"
+                    }
                 },
-                'activity': {
-                    'bg': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-bg.png')
+                "activity": {
+                    "bg": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-bg.png"
                     },
-                    'buy': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-activity-buy.png')
+                    "buy": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-activity-buy.png"
                     },
-                    'continue': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-activity-c.png')
+                    "continue": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-activity-c.png"
                     },
-                    'progress': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-activity-progress.png')
+                    "progress": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-activity-progress.png"
                     },
-                    'used': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-activity-used.png')
+                    "used": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-activity-used.png"
                     },
-                    'down': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-activity-jiantou-down.png')
+                    "down": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-activity-jiantou-down.png"
                     },
-                    'up': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-activity-jiantou-up.png')
+                    "up": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-activity-jiantou-up.png"
                     },
-                    'join': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-activity-join.png')
+                    "join": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-activity-join.png"
                     },
-                    'header_bg': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-activity-header.png')
+                    "header_bg": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-activity-header.png"
                     },
-                    'help': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-activity-help.png')
+                    "help": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-activity-help.png"
                     },
-                    'join_m': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-activity-join-m.png')
+                    "join_m": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-activity-join-m.png"
                     },
-                    'x': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-activity-x.png')
+                    "x": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-activity-x.png"
                     },
-                    'more': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-activity-more.png')
+                    "more": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-activity-more.png"
                     },
-                    'buy_b': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-activity-buy-b.png')
+                    "buy_b": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-activity-buy-b.png"
                     },
-                    'header_bg_1': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-activity-header-1.png')
+                    "header_bg_1": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-activity-header-1.png"
                     },
-                    'header_bg_2': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-activity-header-2.png')
+                    "header_bg_2": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-activity-header-2.png"
                     },
-                    'header_bg_3': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-activity-header-3.png')
-                    },
-
+                    "header_bg_3": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-activity-header-3.gif"
+                    }
                 },
-                'list': {
-                    'right': {
-                        'url': os.path.join(wxappUrl, 'icon-bargain-list-right.png')
+                "list": {
+                    "right": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-bargain-list-right.png"
                     }
                 }
             },
-            'store': {
-                'disabled': {
-                    'url': os.path.join(wxappUrl, 'disabled.png')
+            "store": {
+                "disabled": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/disabled.png"
                 },
-                'bg': {
-                    'url': os.path.join(wxappUrl, 'bg.png')
+                "bg": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/bg.png"
                 },
-                'car': {
-                    'url': os.path.join(wxappUrl, 'car.png')
+                "car": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/car.png"
                 },
-                'binding_pic': {
-                    'url': os.path.join(wxappUrl, 'binding-pic.png')
+                "binding_pic": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/binding-pic.png"
                 },
-                'gold': {
-                    'url': os.path.join(wxappUrl, 'gold.png')
+                "gold": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/gold.png"
                 },
-                'clear': {
-                    'url': os.path.join(wxappUrl, 'clear.png')
+                "clear": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/clear.png"
                 },
-                'good_recommend': {
-                    'url': os.path.join(wxappUrl, 'good-recommend.png')
+                "good_recommend": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/good-recommend.png"
                 },
-                'guige': {
-                    'url': os.path.join(wxappUrl, 'guige.jpg')
+                "guige": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/guige.jpg"
                 },
-                'home_gwc': {
-                    'url': os.path.join(wxappUrl, 'home-gwc.png')
+                "home_gwc": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/home-gwc.png"
                 },
-                'huiyuan_bg': {
-                    'url': os.path.join(wxappUrl, 'huiyuan-bg.png')
+                "huiyuan_bg": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/huiyuan-bg.png"
                 },
-                'check': {
-                    'url': os.path.join(wxappUrl, 'icon-check.png')
+                "check": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-check.png"
                 },
-                'checked': {
-                    'url': os.path.join(wxappUrl, 'icon-checked.png')
+                "checked": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-checked.png"
                 },
-                'clerk': {
-                    'url': os.path.join(wxappUrl, 'icon-clerk.png')
+                "clerk": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-clerk.png"
                 },
-                'close': {
-                    'url': os.path.join(wxappUrl, 'icon-close.png')
+                "close": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-close.png"
                 },
-                'close2': {
-                    'url': os.path.join(wxappUrl, 'icon-close2.png')
+                "close2": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-close2.png"
                 },
-                'close3': {
-                    'url': os.path.join(wxappUrl, 'icon-close3.png')
+                "close3": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-close3.png"
                 },
-                'close4': {
-                    'url': os.path.join(wxappUrl, 'icon-close4.png')
+                "close4": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-close4.png"
                 },
-                'delete': {
-                    'url': os.path.join(wxappUrl, 'icon-delete.png')
+                "delete": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-delete.png"
                 },
-                'detail_love': {
-                    'url': os.path.join(wxappUrl, 'icon-detail-love.png')
+                "detail_love": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-detail-love.png"
                 },
-                'edit': {
-                    'url': os.path.join(wxappUrl, 'icon-edit.png')
+                "edit": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-edit.png"
                 },
-                'favorite': {
-                    'url': os.path.join(wxappUrl, 'icon-favorite.png')
+                "favorite": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-favorite.png"
                 },
-                'favorite_active': {
-                    'url': os.path.join(wxappUrl, 'icon-favorite-active.png')
+                "favorite_active": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-favorite-active.png"
                 },
-                'good_shop': {
-                    'url': os.path.join(wxappUrl, 'icon-good-shop.png')
+                "good_shop": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-good-shop.png"
                 },
-                'group_share': {
-                    'url': os.path.join(wxappUrl, 'icon-group-share.png')
+                "group_share": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-group-share.png"
                 },
-                'image_picker': {
-                    'url': os.path.join(wxappUrl, 'icon-image-picker.png')
+                "image_picker": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-image-picker.png"
                 },
-                'jiantou_r': {
-                    'url': os.path.join(wxappUrl, 'icon-jiantou-r.png')
+                "jiantou_r": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-jiantou-r.png"
                 },
-                'member_rights': {
-                    'url': os.path.join(wxappUrl, 'icon-member-rights.png')
+                "member_rights": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-member-rights.png"
                 },
-                'my_exchange': {
-                    'url': os.path.join(wxappUrl, 'icon-my-exchange.png')
+                "my_exchange": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-my-exchange.png"
                 },
-                'ntegration': {
-                    'url': os.path.join(wxappUrl, 'icon-ntegration.png')
+                "ntegration": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-ntegration.png"
                 },
-                'pay_right': {
-                    'url': os.path.join(wxappUrl, 'icon-pay-right.png')
+                "pay_right": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-pay-right.png"
                 },
-                'icon_play': {
-                    'url': os.path.join(wxappUrl, 'icon-play.png')
+                "icon_play": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-play.png"
                 },
-                'service': {
-                    'url': os.path.join(wxappUrl, 'icon-service.png')
+                "service": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-service.png"
                 },
-                'shuoming': {
-                    'url': os.path.join(wxappUrl, 'icon-shuoming.png')
+                "shuoming": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-shuoming.png"
                 },
-                'store': {
-                    'url': os.path.join(wxappUrl, 'icon-store.png')
+                "store": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-store.png"
                 },
-                'time_bg': {
-                    'url': os.path.join(wxappUrl, 'icon-time-bg.png')
+                "time_bg": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-time-bg.png"
                 },
-                'time_split': {
-                    'url': os.path.join(wxappUrl, 'icon-time-split.png')
+                "time_split": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-time-split.png"
                 },
-                'uncheck': {
-                    'url': os.path.join(wxappUrl, 'icon-uncheck.png')
+                "uncheck": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-uncheck.png"
                 },
-                'up': {
-                    'url': os.path.join(wxappUrl, 'icon-up.png')
+                "up": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-up.png"
                 },
-                'address': {
-                    'url': os.path.join(wxappUrl, 'icon-address.png')
+                "address": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-address.png"
                 },
-                'order_status_bar': {
-                    'url': os.path.join(wxappUrl, 'img-order-status-bar.png')
+                "order_status_bar": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/img-order-status-bar.png"
                 },
-                'pc_login': {
-                    'url': os.path.join(wxappUrl, 'img-pc-login.png')
+                "pc_login": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/img-pc-login.png"
                 },
-                'jia': {
-                    'url': os.path.join(wxappUrl, 'jia.png')
+                "jia": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/jia.png"
                 },
-                'jian': {
-                    'url': os.path.join(wxappUrl, 'jian.png')
+                "jian": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/jian.png"
                 },
-                'jiangli': {
-                    'url': os.path.join(wxappUrl, 'jiangli.png')
+                "jiangli": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/jiangli.png"
                 },
-                'quick_hot': {
-                    'url': os.path.join(wxappUrl, 'quick-hot.png')
+                "quick_hot": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/quick-hot.png"
                 },
-                'search_index': {
-                    'url': os.path.join(wxappUrl, 'serach-index-icon.png')
+                "search_index": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/serach-index-icon.png"
                 },
-                'shou': {
-                    'url': os.path.join(wxappUrl, 'shou.png')
+                "shou": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/shou.png"
                 },
-                'video_play': {
-                    'url': os.path.join(wxappUrl, 'video-play.png')
+                "video_play": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/video-play.png"
                 },
-                'yougoods': {
-                    'url': os.path.join(wxappUrl, 'yougoods.jpg')
+                "yougoods": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/yougoods.jpg"
                 },
-                'binding': {
-                    'url': os.path.join(wxappUrl, 'binding.png'),
-                    'remark': '绑定公众号'
+                "binding": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/binding.png",
+                    "remark": "绑定公众号"
                 },
-                'binding_yes': {
-                    'url': os.path.join(wxappUrl, 'binding_yes.png'),
-                    'remark': '已绑定公众号'
+                "binding_yes": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/binding_yes.png",
+                    "remark": "已绑定公众号"
                 },
-                'share_commission': {
-                    'url': os.path.join(wxappUrl, 'share_commission.png'),
-                    'remark': '商品详情分销价'
+                "share_commission": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/share_commission.png",
+                    "remark": "商品详情分销价"
                 },
-                'member_price': {
-                    'url': os.path.join(wxappUrl, 'member_price.png'),
-                    'remark': '商品详情会员价'
+                "member_price": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/member_price.png",
+                    "remark": "商品详情会员价"
                 }
             },
-            'pt': {
-                'active': {
-                    'url': os.path.join(wxappUrl, 'ico-pt-active.png')
+            "pt": {
+                "active": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/ico-pt-active.png"
                 },
-                'text': {
-                    'url': os.path.join(wxappUrl, 'icon-pt-text.png')
+                "text": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-pt-text.png"
                 },
-                'group_bg': {
-                    'url': os.path.join(wxappUrl, 'icon-pt-group-bg.png')
+                "group_bg": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-pt-group-bg.png"
                 },
-                'address_bottom': {
-                    'url': os.path.join(wxappUrl, 'pt-addres-bottom.png')
+                "address_bottom": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/pt-addres-bottom.png"
                 },
-                'address_top': {
-                    'url': os.path.join(wxappUrl, 'pt-addres-top.png')
+                "address_top": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/pt-addres-top.png"
                 },
-                'address': {
-                    'url': os.path.join(wxappUrl, 'pt-address.png')
+                "address": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/pt-address.png"
                 },
-                'details': {
-                    'url': os.path.join(wxappUrl, 'pt-details-pt.png')
+                "details": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/pt-details-pt.png"
                 },
-                'empty_order': {
-                    'url': os.path.join(wxappUrl, 'pt-empty-order.png')
+                "empty_order": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/pt-empty-order.png"
                 },
-                'fail': {
-                    'url': os.path.join(wxappUrl, 'pt-fail.png')
+                "fail": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/pt-fail.png"
                 },
-                'favorite': {
-                    'url': os.path.join(wxappUrl, 'pt-favorite.png')
+                "favorite": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/pt-favorite.png"
                 },
-                'go_home': {
-                    'url': os.path.join(wxappUrl, 'pt-go-home.png')
+                "go_home": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/pt-go-home.png"
                 },
-                'no_group_num': {
-                    'url': os.path.join(wxappUrl, 'pt-no-group-num-pic.png')
+                "no_group_num": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/pt-no-group-num-pic.png"
                 },
-                'search_clear': {
-                    'url': os.path.join(wxappUrl, 'pt-search-clear.png')
+                "search_clear": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/pt-search-clear.png"
                 },
-                'search': {
-                    'url': os.path.join(wxappUrl, 'pt-search-icon.png')
+                "search": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/pt-search-icon.png"
                 },
-                'shop_car': {
-                    'url': os.path.join(wxappUrl, 'pt-shop-car.png')
+                "shop_car": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/pt-shop-car.png"
                 },
-                'success': {
-                    'url': os.path.join(wxappUrl, 'pt-success.png')
+                "success": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/pt-success.png"
                 }
             },
-            'balance': {
-                'left': {
-                    'url': os.path.join(wxappUrl, 'icon-balance-left.png')
+            "balance": {
+                "left": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-balance-left.png"
                 },
-                'right': {
-                    'url': os.path.join(wxappUrl, 'icon-balance-right.png')
+                "right": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-balance-right.png"
                 },
-                'recharge': {
-                    'url': os.path.join(wxappUrl, 'icon-balance-recharge.png')
+                "recharge": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-balance-recharge.png"
                 },
-                'recharge_bg': {
-                    'url': os.path.join(wxappUrl, 'icon-balance-recharge-bg.png')
+                "recharge_bg": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-balance-recharge-bg.png"
                 }
             },
-            'card': {
-                'btn': {
-                    'url': os.path.join(wxappUrl, 'icon-card-btn.png')
+            "card": {
+                "btn": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-card-btn.png"
                 },
-                'del': {
-                    'url': os.path.join(wxappUrl, 'icon-card-del.png')
+                "del": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-card-del.png"
                 },
-                'qrcode': {
-                    'url': os.path.join(wxappUrl, 'icon-card-qrcode.png')
+                "qrcode": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-card-qrcode.png"
                 },
-                'top': {
-                    'url': os.path.join(wxappUrl, 'icon-card-top.png')
+                "top": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-card-top.png"
                 }
             },
-            'coupon': {
-                'coupon': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-coupon.png')
+            "coupon": {
+                "coupon": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-coupon.png"
                 },
-                'disabled': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-coupon-disabled.png')
+                "disabled": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-coupon-disabled.png"
                 },
-                'enabled': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-coupon-enabled.png')
+                "enabled": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-coupon-enabled.png"
                 },
-                'index': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-coupon-index.png')
+                "index": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-coupon-index.png"
                 },
-                'no': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-coupon-no.png')
+                "no": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-coupon-no.png"
                 },
-                'bg': {
-                    'url': os.path.join(wxappUrl,
-                                        'img-get-coupon-bg.png')
+                "bg": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/img-get-coupon-bg.png"
                 },
-                'item_bg': {
-                    'url': os.path.join(wxappUrl,
-                                        'img-get-coupon-item-bg.png')
+                "item_bg": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/img-get-coupon-item-bg.png"
                 }
             },
-            'system': {
-                'wechatapp': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-wechatapp.png')
+            "system": {
+                "wechatapp": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-wechatapp.png"
                 },
-                'yuyue': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-yuyue.png')
+                "yuyue": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-yuyue.png"
                 },
-                'loading': {
-                    'url': os.path.join(wxappUrl,
-                                        'loading.svg')
+                "loading": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/loading.svg"
                 },
-                'loading2': {
-                    'url': os.path.join(wxappUrl,
-                                        'loading2.svg')
+                "loading2": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/loading2.svg"
                 },
-                'loading_black': {
-                    'url': os.path.join(wxappUrl,
-                                        'loading-black.svg')
+                "loading_black": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/loading-black.svg"
                 },
-                'alipay': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-alipay.png')
+                "alipay": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-alipay.png"
                 }
             },
-            'integral': {
-                'all': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-integral-all.png')
+            "integral": {
+                "all": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-integral-all.png"
                 },
-                'close': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-integral-close.png')
+                "close": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-integral-close.png"
                 },
-                'detail': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-integral-detail.png')
+                "detail": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-integral-detail.png"
                 },
-                'head': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-integral-head.png')
+                "head": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-integral-head.png"
                 },
-                'shibai': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-integral-shibai.png')
+                "shibai": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-integral-shibai.png"
                 },
-                'success': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-integral-success.png')
+                "success": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-integral-success.png"
                 }
             },
-            'miaosha': {
-                'miaosha': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-miaosha.png')
+            "miaosha": {
+                "miaosha": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-miaosha.png"
                 },
-                'ms_activity_bg': {
-                    'url': os.path.join(wxappUrl,
-                                        'ms_activity_bg.png'),
-                    'remark': '秒杀活动到计时背景图'
-                },
-            },
-            'notice': {
-                'jiantou': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-notice-jiantou.png')
-                },
-                'title': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-notice-title.png')
+                "ms_activity_bg": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/ms_activity_bg.png",
+                    "remark": "秒杀活动到计时背景图"
                 }
             },
-            'point': {
-                'gray': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-point-gray.png')
+            "notice": {
+                "jiantou": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-notice-jiantou.png"
                 },
-                'green': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-point-green.png')
+                "title": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-notice-title.png"
+                },
+                "notice": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-notice.png"
                 }
             },
-            'register': {
-                'register': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-register.png')
+            "point": {
+                "gray": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-point-gray.png"
                 },
-                'is_register': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-is-register.png')
-                },
-                'close': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-register-close.png')
-                },
-                'head': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-register-head.png')
-                },
-                'left': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-register-left.png')
-                },
-                'right': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-register-right.png')
-                },
-                'quan': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-register-quan.png')
-                },
-                'sign_in': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-register-sign-in.png')
-                },
-            },
-            'search': {
-                'search': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-search.png')
-                },
-                'search_no': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-search-no.png')
-                },
-                's_up': {
-                    'url': os.path.join(wxappUrl,
-                                        'search_up.png')
+                "green": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-point-green.png"
                 }
             },
-            'share': {
-                'share': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-share.png')
+            "register": {
+                "register": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-register.png"
                 },
-                'ant': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-share-ant.png')
+                "is_register": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-is-register.png"
                 },
-                'bank': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-share-bank.png')
+                "close": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-register-close.png"
                 },
-                'friend': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-share-friend.png')
+                "head": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-register-head.png"
                 },
-                'qrcode': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-share-qrcode.png')
+                "left": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-register-left.png"
                 },
-                'selected': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-share-selected.png')
+                "right": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-register-right.png"
                 },
-                'tip': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-share-tip.png')
+                "quan": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-register-quan.png"
                 },
-                'wechat': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-share-wechat.png')
-                },
-                'down': {
-                    'url': os.path.join(wxappUrl,
-                                        'img-share-down.png')
-                },
-                'info': {
-                    'url': os.path.join(wxappUrl,
-                                        'img-share-info.png')
-                },
-                'money': {
-                    'url': os.path.join(wxappUrl,
-                                        'img-share-money.png')
-                },
-                'img_qrcode': {
-                    'url': os.path.join(wxappUrl,
-                                        'img-share-qrcode.png')
-                },
-                'right': {
-                    'url': os.path.join(wxappUrl,
-                                        'img-share-right.png')
-                },
-                'shop': {
-                    'url': os.path.join(wxappUrl,
-                                        'img-share-shop.png')
+                "sign_in": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-register-sign-in.png"
                 }
             },
-            'shop': {
-                'dingwei': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-shop-dingwei.png')
+            "search": {
+                "search": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-search.png"
                 },
-                'love': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-shop-love.png')
+                "search_no": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-search-no.png"
                 },
-                'nav': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-shop-nav.png')
-                },
-                'nav_one': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-shop-nav-1.png')
-                },
-                'search': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-shop-search.png')
-                },
-                'tel': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-shop-tel.png')
-                },
-                'down': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-shop-down.png')
+                "s_up": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/search_up.png"
                 }
             },
-            'sort': {
-                'down': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-sort-down.png')
+            "share": {
+                "share": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-share.png"
                 },
-                'down_active': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-sort-down-active.png')
+                "ant": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-share-ant.png"
                 },
-                'up': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-sort-up.png')
+                "bank": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-share-bank.png"
+                },
+                "friend": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-share-friend.png"
+                },
+                "qrcode": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-share-qrcode.png"
+                },
+                "selected": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-share-selected.png"
+                },
+                "tip": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-share-tip.png"
+                },
+                "wechat": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-share-wechat.png"
+                },
+                "down": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/img-share-down.png"
+                },
+                "info": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/img-share-info.png"
+                },
+                "money": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/img-share-money.png"
+                },
+                "img_qrcode": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/img-share-qrcode.png"
+                },
+                "right": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/img-share-right.png"
+                },
+                "shop": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/img-share-shop.png"
                 }
             },
-            'topic': {
-                'love': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-topic-love.png')
+            "shop": {
+                "dingwei": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-shop-dingwei.png"
                 },
-                'love_active': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-topic-love-active.png')
+                "love": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-shop-love.png"
                 },
-                'share': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-topic-share.png')
+                "nav": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-shop-nav.png"
+                },
+                "nav_one": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-shop-nav-1.png"
+                },
+                "search": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-shop-search.png"
+                },
+                "tel": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-shop-tel.png"
+                },
+                "down": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-shop-down.png"
                 }
             },
-            'user': {
-                'kf': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-user-kf.png')
+            "sort": {
+                "down": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-sort-down.png"
                 },
-                'level': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-user-level.png')
+                "down_active": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-sort-down-active.png"
                 },
-                'balance': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-user-balance.png')
+                "up": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-sort-up.png"
                 },
-                'wallet': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-user-wallet.png')
-                },
-                'integral': {
-                    'url': os.path.join(wxappUrl,
-                                        'icon-user-integral.png')
-                },
-                'coupon_xia': {
-                    'url': os.path.join(wxappUrl,
-                                        'user-coupon-xia.png')
+                "up_active": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-sort-up-active.png"
                 }
             },
-            'cart': {
-                'add': {
-                    'url': os.path.join(wxappUrl,
-                                        'cart-add.png')
+            "topic": {
+                "love": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-topic-love.png"
                 },
-                'less': {
-                    'url': os.path.join(wxappUrl,
-                                        'cart-less.png')
+                "love_active": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-topic-love-active.png"
                 },
-                'no_add': {
-                    'url': os.path.join(wxappUrl,
-                                        'cart-no-add.png')
-                },
-                'no_less': {
-                    'url': os.path.join(wxappUrl,
-                                        'cart-no-less.png')
-                },
-            },
-            'nav': {
-                'cart': {
-                    'url': os.path.join(wxappUrl,
-                                        'nav-icon-cart.png')
-                },
-                'index': {
-                    'url': os.path.join(wxappUrl,
-                                        'nav-icon-index.png')
+                "share": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-topic-share.png"
                 }
             },
-            'yy': {
-                'form_title': {
-                    'url': os.path.join(wxappUrl,
-                                        'yy-form-title.png')
+            "user": {
+                "kf": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-user-kf.png"
+                },
+                "level": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-user-level.png"
+                },
+                "balance": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-user-balance.png"
+                },
+                "wallet": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-user-wallet.png"
+                },
+                "integral": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-user-integral.png"
+                },
+                "coupon_xia": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/user-coupon-xia.png"
                 }
             },
-            'scratch': {
-                'index': {
-                    'scratch_bg': {
-                        'url': os.path.join(wxappUrl,
-                                            'scratch_bg.png')
+            "cart": {
+                "add": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/cart-add.png"
+                },
+                "less": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/cart-less.png"
+                },
+                "no_add": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/cart-no-add.png"
+                },
+                "no_less": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/cart-no-less.png"
+                }
+            },
+            "nav": {
+                "cart": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/nav-icon-cart.png"
+                },
+                "index": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/nav-icon-index.png"
+                }
+            },
+            "yy": {
+                "form_title": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/yy-form-title.png"
+                }
+            },
+            "scratch": {
+                "index": {
+                    "scratch_bg": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/scratch_bg.png"
                     },
-                    'scratch_success': {
-                        'url': os.path.join(wxappUrl,
-                                            'scratch_success.png')
+                    "scratch_success": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/scratch_success.png"
                     }
                 }
             },
-            'goods': {
-                'goods': {
-                    'address': {
-                        'url': os.path.join(wxappUrl,
-                                            'icon-goods-address.png')
+            "goods": {
+                "goods": {
+                    "address": {
+                        "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-goods-address.png"
                     }
                 }
             },
-            'step': {
-                'dare_bg': {
-                    'url': os.path.join(wxappUrl,
-                                        'dare-bg.png')
+            "step": {
+                "dare_bg": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/dare-bg.png"
                 },
-                'home_bg': {
-                    'url': os.path.join(wxappUrl,
-                                        'home-bg.png')
+                "home_bg": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/home-bg.png"
                 },
-                'join_bg': {
-                    'url': os.path.join(wxappUrl,
-                                        'join-bg.png')
+                "join_bg": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/join-bg.png"
                 },
-                'detail_bg': {
-                    'url': os.path.join(wxappUrl,
-                                        'detail-bg.png')
+                "detail_bg": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/detail-bg.png"
                 },
-                'log_bg': {
-                    'url': os.path.join(wxappUrl,
-                                        'log-bg.png')
+                "log_bg": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/log-bg.png"
+                }
+            },
+            "lottery": {
+                "time": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/lottery_time.png"
+                }
+            },
+            "cell": {
+                "cell_1": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-cell-1.png"
                 },
+                "cell_2": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-cell-2.png"
+                },
+                "cell_3": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-cell-3.png"
+                },
+                "cell_4": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-cell-4.png"
+                },
+                "cell_5": {
+                    "url": "http://123.56.8.39/addons/zjhj_mall/core/web/statics/wxapp/images/icon-cell-5.png"
+                }
             }
         }
-
         return images
 
     def index(self):
